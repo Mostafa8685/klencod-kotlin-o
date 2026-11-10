@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_dark_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/quick_stats_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:maxLines="1"
+            android:text="مانجو درايف ∞ • سحابة تيليجرام"
+            android:textColor="#FF8CD0FA"
+            android:textSize="11.5sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/quick_tier_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/widget_btn_bg"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:text="∞ PRO"
+            android:textColor="#FFFFFFFF"
+            android:textSize="9.5sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/quick_camera"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/widget_btn_bg"
+            android:gravity="center"
+            android:text="المجلدات"
+            android:textColor="#FFFFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/quick_gallery"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1.15"
+            android:background="@drawable/widget_accent_bg"
+            android:gravity="center"
+            android:text="مانجو درايف"
+            android:textColor="#FFFFFFFF"
+            android:textSize="12.5sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/quick_studio"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/widget_btn_bg"
+            android:gravity="center"
+            android:text="الوسائط"
+            android:textColor="#FF8CD0FA"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/quick_vault"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/widget_btn_bg"
+            android:gravity="center"
+            android:text="الخزنة"
+            android:textColor="#FFFFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

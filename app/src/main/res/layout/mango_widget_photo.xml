@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_bg">
+
+    <ImageView
+        android:id="@+id/widget_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <!-- شارة التاريخ والذاكرة العلوية -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/widget_date_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/widget_btn_bg"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="اليوم"
+            android:textColor="#FFFFFFFF"
+            android:textSize="11.5sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/widget_refresh"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/widget_btn_bg"
+            android:gravity="center"
+            android:text="⟳"
+            android:textColor="#FFFFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- تدرج سفلي مع العنوان والتفاصيل -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/widget_caption_bg"
+        android:orientation="vertical"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:paddingTop="26dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/widget_caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="Gallery Pro"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/widget_subcaption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:maxLines="1"
+            android:text="ذكرياتك المميزة بدقة فائقة"
+            android:textColor="#DDE5F0"
+            android:textSize="11.5sp" />
+    </LinearLayout>
+</FrameLayout>
